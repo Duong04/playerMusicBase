@@ -88,8 +88,21 @@ header h2 {
   
 .control .btn {
     color: #666;
-    padding: 18px;
+    width: 50px;
+    height: 50px;
     font-size: 18px;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease; 
+}
+
+.control .btn:hover{
+    background-color: #000;
+    color: #fff;
 }
   
 .control .btn.active {
@@ -141,6 +154,11 @@ header h2 {
     padding: 8px 16px;
     border-radius: 5px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.song:hover {
+    opacity: 0.7;
 }
   
 .song.active {
